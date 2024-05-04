@@ -5,14 +5,62 @@
     font-family: sans-serif;
 }
 
-/* sidebar và các thành phần bên trong */
-#sidebar {
-    height: 100vw;
-    width: 16vw;
-    background-color: #1a1363;
+#main {
+    display: flex;
+    height: 100vh; /* chiều cao toàn bộ cửa sổ hiển thị */
+    width: 100vw; /* chiều rộng toàn bộ cửa sổ hiển thị */
+    overflow: hidden; /* Ngăn chặn bất kỳ tràn nào có thể gây ra thanh cuộn */
 }
 
+#sidebar {
+    height: 100vh; /* chiều cao toàn bộ cửa sổ hiển thị */
+    width: 16vw; /* điều chỉnh chiều rộng nếu cần */
+    background-color: #1a1363;
+    float: left;
+}
+
+#maincontent {
+    width: 84vw; /* Điều chỉnh chiều rộng để lấp đầy không gian còn lại */
+    height: 100vh; /* chiều cao toàn bộ cửa sổ hiển thị */
+    background-color: #ece9e9;
+}
+
+/* Điều chỉnh các phần tử bên trong */
+#header {
+    width: 100%;
+    min-height: 7vh; /* Sử dụng min-height để duy trì không gian tối thiểu */
+    display: flex;
+    align-items: center; /* Căn chỉnh các mục theo chiều dọc ở giữa */
+}
+
+#body {
+    width: 100%;
+    height: calc(100% - 7vh); /* Chiều cao còn lại sau khi trừ đi header */
+    display: flex;
+    flex-direction: column;
+}
+
+#f-container {
+    width: 100%;
+    height: 100%; /* Đảm bảo lấp đầy container cha */
+    display: flex;
+    flex-direction: row;
+}
 #nav-item {
+    margin-left: 20%;
+    margin-top: 7%;
+    background-color: #1a1363;
+    border: none;
+    width: 65%;
+}
+
+#nav-item-txt {
+    color: #fff;
+    margin: 5%;
+    font-size: 16px;
+}
+
+#nav-link-dashboard {
     margin-left: 6%;
     margin-top: 7%;
     background-color: #ece9e9;
@@ -22,24 +70,11 @@
     border-radius: 100px;
 }
 
-#nav-item-txt {
+#nav-text-dashboard {
     color: #1a1363;
     margin: 5%;
     font-size: 16px;
     font-weight: bold;
-}
-
-#nav-link-dashboard {
-    margin-left: 20%;
-    background-color: #1a1363;
-    border: none;
-    width: 55%;
-}
-
-#nav-text-dashboard {
-    color: #fff;
-    margin: 5%;
-    font-size: 16px;
 }
 
 #nav-link-plan {
@@ -102,22 +137,6 @@
     font-size: 16px;
 }
 
-#maincontent {
-    width: 84vw;
-    height: 100vw;
-    background-color: #ece9e9;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-/* Logo và cái chuông */
-#header {
-    width: 100%;
-    height: 7%;
-    display: flex;
-}
-
 #logo {
     margin-left: 2%;
 }
@@ -129,26 +148,12 @@
 }
 
 /* phần nội dung chính */
-#body {
-    width: 100%;
-    height: 93%;
-    display: flex;
-    flex-direction: column;
-}
-
-#f-container {
-    margin-top: 1%;
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-}
 
 #c1-container {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 35%;
+    width: 90%;
+    height: 95%;
     margin-left: 2%;
 }
 
@@ -164,56 +169,26 @@
     flex-direction: column;
 }
 
-#infobox-icon {
-    display: flex; 
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-
-}
-
 #user-profile {
     margin-top: 3%;
     margin-bottom: 7%;
 }
-
-#username {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    flex-direction: row;
-    margin-bottom: 5%;
-}
-
-#contactno {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center; 
-    flex-direction: row;
-    margin-bottom: 5%;
-}
-
-#email {
-    margin-bottom: 3%;
-}
-
 #infochange-box {
     width: 100%;
-    height: 50%;
+    height: 80%;
     border-radius: 7%;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    /* background-color: green; */
     background-color: #fff;
     margin-bottom: 5%;
 }
 
-#infochange-box .username {
+#infochange-box .nameofparticipant {
     margin-left: 7%;
-    margin-top: 7%;
+    margin-top: 3%;
     font-weight: bold;
 }
 
-#infochange-box .contact {
+#infochange-box .dateofbirth {
     margin-left: 7%;
     margin-top: 3%;
     font-weight: bold;
@@ -225,6 +200,11 @@
     font-weight: bold;
 }
 
+#infochange-box .contact {
+    margin-left: 7%;
+    margin-top: 3%;
+    font-weight: bold;
+}
 #infochange-box .inputbox {
     width: 85%;
     margin-left: 7%;
