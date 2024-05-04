@@ -4,36 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
     <title>Document</title>
     
 </head>
 
 <body>
     <main>
-        <h1>Đăng nhập</h1>
         <form action="">
-            <div class="form-group">
-                <label class="form-label" for="email">Email*</label>
-                <input class="form-input" type="email" id="email" name="email" required />
+            <div id="f-container">
+                <div id="c1-container">
+                    <h1 class="register">Register</h1>
+                    <div class="form-group">
+                        <label class="form-label" for="username">Username*</label>
+                        <input class="form-input" type="username" id="username" name="username" required />
+                
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email*</label>
+                        <input class="form-input" type="email" id="email" name="email" required />
+                
+                    </div>
         
-            </div>
-
-            <div class="form-group">
-                <label class="form-label" for="password">Password*</label>
-                <input class="form-input" type="password" id="password" name="password" required />
-            </div>
-
-            <div class="form-group">
-                <div class="checkbox-group">
-                    <input type="checkbox" name="remember" id="remember" hidden />
-                    <label for="remember">Remember</label>
+                    <div class="form-group">
+                        <label class="form-label" for="createpassword">Create Password*</label>
+                        <input class="form-input" type="password" id="password" name="password" required />
+                    </div>
+        
+                    <div class="form-group">
+                        <label class="form-label" for="re-typepassword">Re-type Password*</label>
+                        <input class="form-input" type="password" id="password" name="password" required />
+                    </div>
+                                
+                    <div class="form-group">
+                        <button class="btn" type="submit">Register</button>
+                    </div>
+        
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="AcceptalltheTermsandConditions" id="AcceptalltheTermsandConditions" hidden />
+                            <label for="AcceptalltheTermsandConditions">Accept all the Terms and Conditions</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h4>Or</h4>
+                    </div>
+                    <div class="form-group">
+                        <a class="login" href="/login.html">Login</a>
+                    </div>
                 </div>
-            </div>
-
-            
-            <div class="form-group">
-                <button class="btn" type="submit">Submit</button>
+                <div id="c2-container">
+                    <img src="/image/Rectangle 66.png" alt="">
+                </div>
             </div>
         </form>
     </main>

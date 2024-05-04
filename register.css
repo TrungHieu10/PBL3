@@ -8,11 +8,6 @@
     color: #333;
     font-family: system-ui, sans-serif;
   }
-  
-  main {
-    padding: 30px;
-  }
-  
   h1 {
     font-size: 28px;
     color: #1A1363;
@@ -21,19 +16,27 @@
     margin-left: 110px;
     margin-top: 15px;
   }
-  a {
-    margin-left: 60px;
+  main {
+    padding: 30px;
   }
-  .form-group .a
+  #f-container{
+    display:flex;
+    flex-direction: row;
+  }
+  #c1-container
   {
-    margin-left: 91px;
+    margin-top: 50px;
+  }
+  #c2-container
+  {
+    margin-left: 150px;
   }
   form {
     margin-left: 200px;
   }
   
   .form-group {
-    margin-top: 16px;
+    margin-top: 10px;
     color: #1A1363;
   }
   .form-label,
@@ -42,7 +45,7 @@
   }
   
   .form-label {
-    font-weight: 500;
+    font-weight: 600;
   }
   
   .form-input {
@@ -64,24 +67,10 @@
     background: #1A1363;
     cursor: pointer;
   }
-  #f-container{
-    display:flex;
-    flex-direction: row;
-  }
-  #c1-container
-  {
-    margin-top: 100px;
-  }
-  #c2-container
-  {
-    margin-left: 150px;
-  }
   .form-group .btn:hover {
     opacity: 0.9;
   }
-  .form-group a{
-    text-decoration: none
-  }
+  
   /* bỏ user select khi click vào label */
   label {
     user-select: none;
@@ -120,5 +109,13 @@
     border-left: 2px solid #000;
     border-bottom: 2px solid #000;
     rotate: -45deg;
+  }
+  .form-group .login
+  {
+    text-decoration: none
+  }
+  .login 
+  {
+    margin-left: 100px;
   }
  

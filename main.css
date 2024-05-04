@@ -1,0 +1,434 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* sidebar và các thành phần bên trong */
+#sidebar {
+    height: 100vw;
+    width: 16vw;
+    background-color: #1a1363;
+}
+
+#nav-item {
+    margin-left: 6%;
+    margin-top: 7%;
+    background-color: #ece9e9;
+    border: none;
+    width: 95%;
+    padding: 1% 1% 1%;
+    border-radius: 100px;
+}
+
+#nav-item-txt {
+    color: #1a1363;
+    margin: 5%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#nav-link-dashboard {
+    margin-left: 20%;
+    background-color: #1a1363;
+    border: none;
+    width: 55%;
+}
+
+#nav-text-dashboard {
+    color: #fff;
+    margin: 5%;
+    font-size: 16px;
+}
+
+#nav-link-staff {
+    margin-top: 8%;
+    margin-left: 20%;
+    background-color: #1a1363;
+    border: none;
+    width: 35%;
+}
+
+#nav-text-staff {
+    color: #fff;
+    margin: 5%;
+    font-size: 16px;
+}
+
+#nav-link-plan {
+    margin-left: 20%;
+    margin-top: 8%;
+    background-color: #1a1363;
+    border: none;
+    width: 35%;
+}
+
+#nav-text-plan {
+    color: #fff;
+    margin: 5%;
+    font-size: 16px;
+}
+
+#nav-link-payment {
+    margin-left: 20%;
+    margin-top: 8%;
+    background-color: #1a1363;
+    border: none;
+    width: 48%;
+}
+
+#nav-text-payment {
+    color: #fff;
+    margin: 5%;
+    font-size: 16px;
+}
+
+#nav-link-inventory {
+    margin-left: 20%;
+    margin-top: 8%;
+    background-color: #1a1363;
+    border: none;
+    width: 50%;
+}
+
+#nav-text-inventory {
+    color: #fff;
+    margin: 5%;
+    font-size: 16px;
+}
+
+#nav-link-member {
+    margin-left: 20%;
+    margin-top: 8%;
+    background-color: #1a1363;
+    border: none;
+    width: 64%;
+}
+
+#nav-text-member {
+    color: #fff;
+    margin: 5%;
+    font-size: 16px;
+}
+
+#nav-link-coaches {
+    margin-left: 20%;
+    margin-top: 8%;
+    background-color: #1a1363;
+    border: none;
+    width: 50%;
+}
+
+#nav-text-coaches {
+    color: #fff;
+    margin: 5%;
+    font-size: 16px;
+}
+
+#nav-link-report {
+    margin-left: 20%;
+    margin-top: 8%;
+    background-color: #1a1363;
+    border: none;
+    width: 43%;
+}
+
+#nav-text-report {
+    color: #fff;
+    margin: 5%;
+    font-size: 16px;
+}
+
+#user-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+}
+
+#admin-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+#logout {
+    margin-top: 55%;
+    margin-left: 20%;
+    background-color: #1a1363;
+    border: none;
+    width: 40%;
+}
+
+#logout-text {
+    color: #fff;
+    margin-left: 5%;
+    font-size: 16px;
+}
+
+#maincontent {
+    width: 84vw;
+    height: 100vw;
+    background-color: #ece9e9;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Logo và cái chuông */
+#header {
+    width: 100%;
+    height: 7%;
+    display: flex;
+}
+
+#logo {
+    margin-left: 2%;
+}
+
+#bell {
+    margin-left: 75%;
+    border: none;
+    background-color: #ece9e9;
+}
+
+/* phần nội dung chính */
+#body {
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+}
+
+#admin-info {
+    font-size: 200%;
+    margin-top: 1%;
+    margin-left: 2%;
+    color: #1a1363;
+}
+
+#f-container {
+    margin-top: 1%;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+#c1-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 35%;
+    margin-left: 2%;
+}
+
+#c2-container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 44.5%;
+    margin-left: 5%;
+}
+
+#info-box {
+    width: 100%;
+    height: 75%;
+    border-radius: 7%;
+    background-color: #fff;
+    padding: 7%;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex; 
+    flex-direction: column;
+}
+
+#infobox-icon {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+
+}
+
+#admin-profile {
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+
+#username {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#contactno {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#email {
+    margin-bottom: 3%;
+}
+
+#register {
+    width: 100%;
+    height: 5%;
+    border-radius: 100px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #1a1363;
+    font: 700 17px sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 5%;
+}
+
+#infochange-box {
+    width: 100%;
+    height: 50%;
+    border-radius: 7%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    /* background-color: green; */
+    background-color: #fff;
+    margin-bottom: 5%;
+}
+
+#infochange-box .username {
+    margin-left: 7%;
+    margin-top: 7%;
+    font-weight: bold;
+}
+
+#infochange-box .contact {
+    margin-left: 7%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+#infochange-box .email {
+    margin-left: 7%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+#infochange-box .inputbox {
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 0.5%;
+}
+
+#infochange-box .inputbox input[type="text"] {
+    border-radius: 100px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #ece9e9;
+    padding: 7px 15px 7px;
+    font-size: 16px;
+}
+
+#infochange-box .button #save {
+    margin-top: 4%;
+    margin-left: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1a1363;
+    width: 19%;
+    border-radius: 100px;
+    padding: 1%;
+}
+
+#infochange-box .button #cancel {
+    margin-top: 4%;
+    margin-left: 1%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a1363;
+    background-color: #fff;
+    width: 21%;
+    border-radius: 100px;
+    padding: 1%;
+}
+
+#passchange-box {
+    width: 100%;
+    height: 50%;
+    border-radius: 7%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}
+
+#passchange-box .password {
+    font-weight: bold;
+    margin-left: 41.5%;
+    margin-top: 3%;
+}
+
+#passchange-box .curpass {
+    margin-left: 7%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+#passchange-box .newpass {
+    margin-left: 7%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+#passchange-box .retype-newpass {
+    margin-left: 7%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+#passchange-box .inputbox {
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 0.5%;
+}
+
+#passchange-box .inputbox input[type="text"] {
+    border-radius: 100px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #ece9e9;
+    padding: 7px 15px 7px;
+    font-size: 16px;
+}
+
+#passchange-box .button #change {
+    margin-top: 2%;
+    margin-left: 48%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1a1363;
+    width: 22%;
+    border-radius: 100px;
+    padding: 1%;
+}
+
+#passchange-box .button #clear {
+    margin-top: 2%;
+    margin-left: 1%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a1363;
+    background-color: #fff;
+    width: 21%;
+    border-radius: 100px;
+    padding: 1%;
+}
