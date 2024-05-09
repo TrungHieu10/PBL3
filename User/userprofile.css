@@ -93,7 +93,6 @@
 }
 
 
-/* Điều chỉnh các phần tử bên trong */
 #header {
     width: 100%;
     min-height: 7vh; /* Sử dụng min-height để duy trì không gian tối thiểu */
@@ -101,22 +100,10 @@
     align-items: center; /* Căn chỉnh các mục theo chiều dọc ở giữa */
 }
 
-#body {
-    width: 100%;
-    height: calc(100% - 7vh); /* Chiều cao còn lại sau khi trừ đi header */
-    display: flex;
-    flex-direction: column;
-}
-
-#f-container {
-    width: 100%;
-    height: 100%; /* Đảm bảo lấp đầy container cha */
-    display: flex;
-    flex-direction: row;
-}
 #logo {
     margin-left: 2%;
 }
+
 #feedback {
     margin-left: 55%;
     color: #1A1363;
@@ -126,94 +113,135 @@
     border: none;
     background-color: #ece9e9;
 }
-
-/* phần nội dung chính */
-
-#c1-container {
+#user-info {
+    font-size: 200%;
+    margin-top: 1%;
+    margin-left: 2%;
+    color: #1a1363;
+}
+#body {
+    width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 95%;
-    margin-left: 2%;
+    overflow: auto;
 }
 
-#infochange-box {
+#f-container {
+    display: flex;
+    justify-content: space-between; /* Đảm bảo khoảng cách giữa các container */
+    align-items: flex-start; /* Căn hàng đầu các container */
+    margin-top: 1%;
     width: 100%;
-    height: 80%;
-    border-radius: 12px;
+    height: auto; /* Đủ chiều cao để chứa tất cả nội dung */
+}
+
+#c1-container, #c2-container {
+    flex-grow: 1;  /* Cho phép các container này mở rộng một cách linh hoạt */
+    padding: 20px; /* Thêm padding để không gian bên trong thoải mái hơn */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Phân bố đều các thành phần con */
+}
+
+/* Điều chỉnh khoảng cách giữa c1-container và c2-container */
+#c1-container {
+    margin-right: 10px; /* Giảm khoảng cách phải để làm cho các container gần nhau hơn */
+}
+
+#c2-container {
+    margin-left: 10px; /* Giảm khoảng cách trái để làm cho các container gần nhau hơn */
+}
+
+#info-box, #infochange-box, #passchange-box {
+    margin-bottom: 10px; /* Đảm bảo có khoảng cách giữa các hộp */
+    padding: 15px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-color: #fff;
+    border-radius: 10px;
+}
+#passchange-box .password {
+    font-weight: bold;
+    margin-left: 41.5%;
+    margin-top: 3%;
+    color: #1a1363;
+}
+#passchange-box .curpass, .newpass, .retype-newpass {
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+#infobox-icon {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+
+}
+#admin-profile {
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+
+#username {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
     margin-bottom: 5%;
 }
 
-#infochange-box .nameofparticipant {
-    margin-left: 7%;
-    margin-top: 3%;
-    font-weight: bold;
+#contactno {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+    margin-bottom: 5%;
 }
 
-#infochange-box .dateofbirth {
-    margin-left: 7%;
-    margin-top: 3%;
+#email {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+#infochange-box .username, .contact, .email {
     font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 1%;
 }
 
-#infochange-box .email {
-    margin-left: 7%;
-    margin-top: 3%;
-    font-weight: bold;
-}
-
-#infochange-box .contact {
-    margin-left: 7%;
-    margin-top: 3%;
-    font-weight: bold;
-}
-#infochange-box .inputbox {
-    width: 85%;
-    margin-left: 7%;
-    margin-top: 0.5%;
-}
-
-#infochange-box .inputbox input[type="text"] {
+#infochange-box .inputbox input[type="text"],
+#passchange-box .inputbox input[type="text"] {
     border-radius: 100px;
     border: none;
     width: 100%;
     height: 100%;
     background-color: #ece9e9;
-    padding: 7px 15px 7px;
-    font-size: 16px;
-}
-#infochange-box .inputbox input[type="date"] {
-    border-radius: 100px;
-    border: none;
-    width: 100%;
-    height: 100%;
-    background-color: #ece9e9;
-    padding: 7px 15px 7px;
+    padding: 7px 15px;
     font-size: 16px;
 }
 
-#infochange-box .button #complete {
+#infochange-box .button, #passchange-box .button {
+    display: flex;
+    justify-content: start;
     margin-top: 4%;
-    margin-left: 50%;
+}
+
+#infochange-box .button button, #passchange-box .button button {
     font-weight: bold;
     font-size: 16px;
     color: #fff;
     background-color: #1a1363;
-    width: 19%;
     border-radius: 100px;
     padding: 1%;
+    width: 20%;
+    margin-right: 2%;
 }
 
-#infochange-box .button #cancel {
-    margin-top: 4%;
-    margin-left: 1%;
-    font-weight: bold;
-    font-size: 16px;
+#infochange-box .button button#cancel,
+#passchange-box .button button#clear {
     color: #1a1363;
     background-color: #fff;
-    width: 21%;
-    border-radius: 100px;
-    padding: 1%;
 }

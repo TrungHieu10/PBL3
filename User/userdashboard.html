@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Test</title>
+        <title>User Dashboard</title>
         <link rel="stylesheet" href="userdashboard.css">
     </head>
     <body>
@@ -12,35 +12,38 @@
             <img src="/image/PersonCircle.png">
           </div>
           <div id="user-name">User Name</div>
-          <button id="nav-link-dashboard">
+          <button id="nav-link-dashboard" class="nav-button active">
             <img src="/image/Vector.png">
-            <span id="nav-text-dashboard">Dashboard</span>
+            <span>Dashboard</span>
           </button>
-          <button id="nav-item">
+          <button id="nav-link-profile" class="nav-button">
             <img src="/image/Group 6.png">
-            <span id="nav-item-txt">User Profile</span>
+            <span>User Profile</span>
           </button>
-          <button id="nav-link-plan">
+          <button id="nav-link-plan" class="nav-button">
             <img src="/image/JournalCheck_Icon.png">
-            <span id="nav-text-plan">Plan</span>
+            <span>Plan</span>
           </button>
-          <button id="nav-link-coaches">
+          <button id="nav-link-coaches" class="nav-button">
             <img src="/image/Vector (3).png">
-            <span id="nav-text-coaches">Coaches</span>
+            <span>Coaches</span>
           </button>
           <button id="logout">
             <img src="/image/BoxArrowRight.png">
-            <span id="logout-text">Logout</span>
+            <span>Logout</span>
           </button>
-        </div>
+      </div>
         <div id="maincontent">
           <div id="header">
             <div id="logo">
               <img src="/image/logotext.png">
             </div>
-            <button id="bell">
+            <div id="feedback">
+              <h4>Feedback</h4>
+            </div>
+            <div id="bell">
               <img src="/image/bell.png">
-            </button>
+            </div>
           </div>
           <div id="body">
             <div id="f-container">
@@ -48,29 +51,30 @@
                 <div id="infochange-box">
                     <div class="nameofparticipant">Name of Participant</div>
                     <div class="inputbox">
-                      <input type="text">
+                        <input type="text">
                     </div>
                     <div class="dateofbirth">Date of Birth</div>
                     <div class="inputbox">
-                      <input type="text">
+                        <input type="date">
                     </div>
                     <div class="email">Email Address</div>
                     <div class="inputbox">
-                      <input type="text">
+                        <input type="text">
                     </div>
                     <div class="contact">Contact No.</div>
                     <div class="inputbox">
-                      <input type="text">
+                        <input type="text">
                     </div>
                     <div class="button">
-                      <button id="save">Save</button>
-                      <button id="cancel">Cancel</button>
+                        <button id="complete">Complete</button>
+                        <button id="cancel">Cancel</button>
                     </div>
                 </div>
-              </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
+      <script src="sidebarNavigation.js"></script>
     </body>
 </html>

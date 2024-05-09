@@ -3,7 +3,26 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  .btn-back-home img {
+    margin-right: 5px; /* Thêm khoảng cách phải cho hình ảnh */
+}
+  .btn-back-home {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    padding: 8px 12px;
+    background-color: #1A1363; /* Màu nền tối */
+    color: #FFFFFF; /* Màu chữ trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+    border-radius: 8px; /* Bo góc */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+.btn-back-home:hover {
+    background-color: #332F64; /* Màu khi hover */
+}
+
   body {
     color: #333;
     font-family: system-ui, sans-serif;

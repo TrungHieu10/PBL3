@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>User Profile</title>
+        <link rel="stylesheet" href="userprofile.css">
+    </head>
+    <body>
+      <div id="main">
+        <div id="sidebar">
+            <div id="user-logo">
+              <img src="/image/PersonCircle.png">
+            </div>
+            <div id="user-name">User Name</div>
+            <button id="nav-link-dashboard" class="nav-button">
+              <img src="/image/Vector (4).png">
+              <span>Dashboard</span>
+            </button>
+            <button id="nav-link-profile" class="nav-button active">
+              <img src="/image/Home_Icon.png">
+              <span>User Profile</span>
+            </button>
+            <button id="nav-link-plan" class="nav-button">
+              <img src="/image/JournalCheck_Icon.png">
+              <span>Plan</span>
+            </button>
+            <button id="nav-link-coaches" class="nav-button">
+              <img src="/image/Vector (3).png">
+              <span>Coaches</span>
+            </button>
+            <button id="logout">
+              <img src="/image/BoxArrowRight.png">
+              <span>Logout</span>
+            </button>
+        </div>
+        <div id="maincontent">
+          <div id="header">
+            <div id="logo">
+              <img src="/image/logotext.png">
+            </div>
+            <div id="feedback">
+              <h4>Feedback</h4>
+            </div>
+            <button id="bell">
+              <img src="/image/bell.png">
+            </button>
+          </div>
+          <div id="body">
+            <h1 id="user-info">User Information</h1>
+            <div id="f-container">
+              <div id="c1-container">
+                <div id="info-box">
+                  <div id="infobox-icon">
+                    <img id="info-box-icon" src="/image/PersonCircle (1).png">
+                    <div id="admin-profile">User Profile</div>
+                  </div>
+                  <div id="username">
+                    <div id="name">Username</div>
+                    <div id="show_name">Insert Username Here</div>
+                  </div>
+                  <div id="contactno">
+                    <div id="contact">Contact no.</div>
+                    <div id="show_contact">InsertUserContactHere</div>
+                  </div>
+                  <div id="email">Email Address:</div>
+                  <div id="show_email">InsertEmailHere@gmail.com</div>
+                </div>
+              </div>
+              <div id="c2-container">
+                <div id="infochange-box">
+                  <div class="username">Username</div>
+                  <div class="inputbox">
+                    <input type="text">
+                  </div>
+                  <div class="contact">Contact No.</div>
+                  <div class="inputbox">
+                    <input type="text">
+                  </div>
+                  <div class="email">Email Address</div>
+                  <div class="inputbox">
+                    <input type="text">
+                  </div>
+                  <div class="button">
+                    <button id="save">Save</button>
+                    <button id="cancel">Cancel</button>
+                  </div>
+                </div>
+                <div id="passchange-box">
+                  <div class="password">Password</div>
+                  <div class="curpass">Current Password</div>
+                  <div class="inputbox">
+                    <input type="text">
+                  </div>
+                  <div class="newpass">New Password</div>
+                  <div class="inputbox">
+                    <input type="text">
+                  </div>
+                  <div class="retype-newpass">Re-type Password</div>
+                  <div class="inputbox">
+                    <input type="text">
+                  </div>
+                  <div class="button">
+                    <button id="change">Change</button>
+                    <button id="clear">Clear</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="sidebarNavigation.js"></script>
+    </body>
+</html>

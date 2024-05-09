@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#sidebar {
+    position: relative;
+    height: 100vh;
+    width: 20vw;
+    background-color: #1a1363;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.nav-button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    background-color: #1a1363;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button img {
+    margin-right: 10px;
+}
+
+.nav-button span {
+    font-size: 16px;
+}
+
+.nav-button:hover, .nav-button.active {
+    background-color: #ece9e9;
+    transform: scale(1.05);
+}
+
+.nav-button:hover span, .nav-button.active span {
+    color: #1a1363;
+}
+
+#logout {
+    position: absolute; /* Cố định vị trí của nút logout so với sidebar */
+    bottom: 10px; /* Khoảng cách từ đáy của sidebar */
+    left: 20%; /* Đẩy nút ra giữa một chút so với cạnh trái của sidebar */
+    width: 60%; /* Độ rộng của nút được điều chỉnh để phù hợp với thiết kế */
+    background-color: #1a1363;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 0; /* Điều chỉnh đệm cho phù hợp */
+    color: #fff;
+    text-align: center; /* Căn giữa text trong nút */
+    font-size: 16px; /* Điều chỉnh kích thước chữ */
+    cursor: pointer; /* Cho biết đây là nút có thể nhấp */
+}
+
+#logout-text {
+    margin: 0; /* Xóa margin để text ở giữa nút */
+}
+
+#user-logo img {
+    width: 30px;
+    height: auto;
+}
+
+#user-name {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#maincontent {
+    flex: 1; /* Thay vì đặt chiều rộng cố định, cho phép nó chiếm phần còn lại của màn hình */
+    background-color: #ece9e9;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ngăn chặn tràn nội dung */
+}
+
+
+/* Điều chỉnh các phần tử bên trong */
+#header {
+    width: 100%;
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Tăng khoảng cách dưới header */
+}
+
+#body {
+    width: 100%;
+    height: calc(100% - 7vh); /* Chiều cao còn lại sau khi trừ đi header */
+    display: flex;
+    flex-direction: column;
+}
+
+#f-container {
+    width: 100%;
+    height: 100%; /* Đảm bảo lấp đầy container cha */
+    display: flex;
+    flex-direction: row;
+}
+#logo {
+    margin-left: 2%;
+}
+
+#feedback {
+    margin-left: 55%;
+    color: #1A1363;
+}
+#bell {
+    margin-left: 5%;
+    border: none;
+    background-color: #ece9e9;
+}
+#Plans {
+    font-size: 40px; /* Kích thước chữ */
+    margin-top: 20px; /* Khoảng cách trên */
+    margin-bottom: 50px; /* Khoảng cách dưới */
+    color: #1a1363; /* Màu chữ */
+    margin-left: 10%;
+}
+
+/* phần nội dung chính */
+
+#f-container {
+    display: flex;
+    justify-content: space-between; /* Đảm bảo khoảng cách giữa các container */
+    align-items: flex-start; /* Căn hàng đầu các container */
+    margin-top: 1%;
+    width: 100%;
+    height: auto; /* Đủ chiều cao để chứa tất cả nội dung */
+}
+#c1-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 95%;
+    margin-left: 2%;
+}
+
+#info-box {
+    width: 100%;
+    height: 75%;
+    border-radius: 7%;
+    background-color: #fff;
+    padding: 7%;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex; 
+    flex-direction: column;
+}
+
+#infochange-box {
+    width: 100%;
+    height: auto; /* Điều chỉnh chiều cao tự động để chứa các phần tử */
+    padding: 20px; /* Thêm padding để tạo khoảng cách bên trong */
+    background-color: #77749B; /* Màu nền cho box */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Tăng độ mờ của bóng để tạo độ sâu */
+    margin-bottom: 20px; /* Khoảng cách giữa các boxes */
+}
+
+.Plans{
+    margin-top: 10px; /* Khoảng cách giữa các labels */
+    margin-bottom: 17px; /* Khoảng cách giữa label và input box */
+    font-weight: bold;
+    color: #FFF; /* Màu chữ cho các labels */
+    font-size: x-large;
+}
+ .email, .contact {
+    margin-top: 10px; /* Khoảng cách giữa các labels */
+    margin-bottom: 5px; 
+    font-weight: bold;
+    color: #FFF; /* Màu chữ cho các labels */
+}
+.entity-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+
+.showentity {
+    font-weight: lighter;
+    color: #FFF;
+    font-size: small;
+    margin-right: 10px; /* Đảm bảo khoảng cách giữa văn bản và dropdown */
+}
+.search-input {
+    margin-right: 10px; /* Thêm khoảng cách giữa các phần tử */
+    margin-left: 50%;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc; /* Định nghĩa đường viền */
+    min-width: 150px; /* Đảm bảo input có kích thước tối thiểu */
+    background-color: #5D57A3;
+    color: #FFF;
+}
+.search-input::placeholder {
+    color: #fff; /* Chỉnh màu của placeholder */
+    opacity: 1; /* Đảm bảo placeholder không trong suốt */
+}
+.entity-select {
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: none;
+    background-color: #5D57A3;
+    color: #FFF;
+}
+.Plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 17px;
+    padding-left: 10px; /* Thêm khoảng cách bên trái để tách biệt hình ảnh từ cạnh */
+    color: #FFF;
+    font-weight: bold;
+}
+
+.Plan-container img {
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và 'Plan Name' */
+    width: auto; /* Duy trì tỷ lệ hình ảnh */
+    margin-left: 10%;
+}
+
+.Planname, .Price {
+    text-align: center; /* Căn giữa nội dung trong mỗi phần */
+    margin-right: 25%; /* Thêm khoảng cách phải cho mỗi phần để tạo đều */
+}
+
+.Planname {
+    text-align: left; /* Căn trái cho 'Plan Name' */
+}
+.Dateofjoin
+{
+    text-align: center; 
+    margin-right: 27%;
+}
+.Price {
+    margin-right: 0; /* Xóa margin phải cho phần cuối cùng */
+}
+
+.Data-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 17px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.Data-container .Planname1, .Data-container .Dateofjoin1, .Data-container .Price1 {
+    flex-grow: 1;
+    text-align: center; /* Đảm bảo căn giữa cho nội dung */
+    margin-right: 10px; /* Đồng bộ khoảng cách như trong Plan-container */
+}
+
+.Data-container .Price1 {
+    margin-right: 0; /* Không có khoảng cách bên phải cho phần cuối cùng */
+}

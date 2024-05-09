@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamina Fitness - Home</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand img {
+            max-height: 80px; /* Tăng chiều cao tối đa của logo */
+            width: auto; /* Giữ nguyên tỷ lệ khung hình */
+            flex-shrink: 0; /* Ngăn không cho logo thu nhỏ */
+        }
+        .navbar {
+    padding: 0.01rem 0.1rem; /* Giảm padding của navbar để làm mỏng nó lại */
+    
+}
+
+.nav-link {
+    padding: 0.5rem 1rem; /* Điều chỉnh padding cho các link để tăng khoảng cách */
+    margin: 0 10px; /* Thêm khoảng cách ngang giữa các nav item */
+    color: #00008B; /* Dark blue color for the text */
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+/* Điều chỉnh khoảng cách cho logo để không bị quá dính vào các nav item */
+.navbar-brand {
+    margin-right: 2rem; /* Tăng khoảng cách bên phải của logo */
+}
+        .full-body-image {
+    position: relative; /* Thiết lập thành relative để chứa nội dung tuyệt đối */
+    width: 100%;
+    height: 100vh;
+    background: url('/image/trangchu2.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-overlay {
+    position: absolute; /* Vị trí tuyệt đối so với full-body-image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Tăng độ rõ cho chữ trên nền phức tạp */
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+.btn-register {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Màu vàng */
+    color: #000;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #E6C200; /* Màu vàng đậm hơn khi hover */
+}
+
+.btn-register-now {
+    background-color: white; /* Đổi màu nền thành trắng */
+    color: #1A1363; /* Màu chữ xanh đậm */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 2px solid #1A1363; /* Thêm viền màu xanh đậm */
+}
+
+.btn-register-now:hover {
+    background-color: #1A1363; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+}
+
+.centered-image {
+    width: 350px;
+    margin-top: 0px; /* Giảm khoảng cách với nút Register */
+    animation: float 5s ease-in-out infinite; /* Thêm hiệu ứng động */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Thêm hiệu ứng động cho nút đăng ký */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.btn-register,.btn-register-now {
+    animation: pulse 2s infinite;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/image/logoclient.png" alt="Stamina Fitness Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why-join-us">Why Join Us?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#plans">Plan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#coaches">Coaches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#visit">Visit our Gym</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-register" href="/Register/register.html">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Full body image with an overlay at the bottom -->
+    <div class="full-body-image">
+        <div class="content-overlay">
+            <h2>Start a better shape of you! Come Join Us!</h2>
+            <button class="btn btn-lg btn-register-now" onclick="window.location.href='/Register/register.html'">Register Now</button>
+            <img src="/image/logovang.png" alt="Fitness Image" class="centered-image">
+        </div>
+    </div>
+
+    <main>
+    </main>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
