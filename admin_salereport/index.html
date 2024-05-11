@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      <div id="main">
+        <div id="sidebar">
+          <div id="user-logo">
+            <img src="PersonCircle.png">
+          </div>
+          <div id="admin-name">Administrator Name</div>
+          <button id="nav-link-dashboard">
+            <img src="Vector (4).png">
+            <span id="nav-text-dashboard">Dashboard</span>
+          </button>
+          <button id="nav-link-profile">
+            <img src="Home_Icon.png">
+            <span id="nav-text-profile">Admin Profile</span>
+          </button>
+          <button id="nav-link-staff">
+            <img src="People_Icon.png">
+            <span id="nav-text-staff">Staff</span>
+          </button>
+          <button id="nav-link-plan">
+            <img src="JournalCheck_Icon.png">
+            <span id="nav-text-plan">Plan</span>
+          </button>
+          <button id="nav-link-payment">
+            <img src="CreditCard2Back.png">
+            <span id="nav-text-payment">Payment</span>
+          </button>
+          <button id="nav-link-inventory">
+            <img src="Vector (2).png">
+            <span id="nav-text-inventory">Inventory</span>
+          </button>
+          <button id="nav-link-member">
+            <img src="People_Icon.png">
+            <span id="nav-text-member">View Member</span>
+          </button>
+          <button id="nav-link-coaches">
+            <img src="Vector (3).png">
+            <span id="nav-text-coaches">Coaches</span>
+          </button>
+          <button id="nav-item">
+            <img src="Book (1).png">
+            <span id="nav-item-txt">Report</span>
+          </button>
+          <button id="logout">
+            <img src="BoxArrowRight.png">
+            <span id="logout-text">Logout</span>
+          </button>
+        </div>
+        <div id="maincontent">
+          <div id="header">
+            <div id="logo">
+              <img src="logotext.png">
+            </div>
+            <button id="bell">
+              <img src="bell.png">
+            </button>
+          </div>
+          <div id="body">
+            <h1 id="admin-info">Sales Report</h1>
+            <div id="container1">
+              <div id="select-info">
+                <div class="fdate">From Date</div>
+                <div class="edate">End Date</div>
+              </div>
+              <div id="box-button">
+                <div class="fdate-select">
+                  <input type="date">
+                </div>
+                <div class="edate-select">
+                  <input type="date">
+                </div>
+                <button class="report-button">Report</button>
+              </div>
+              <div id="type">Type Of Report</div>
+              <select name="type-select" id="type-select">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+              </select>
+            </div>
+            <div id="container2">
+              <div id="paymenthistory">Payment History</div>
+              <div id="buttonbox">
+                <div id="entities">Show Entities</div>
+                <select name="entities-select" id="entities-select">
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+                <div id="searchbox">
+                  <input type="text">
+                </div>
+                <button id="searchbutton">
+                  <img src="Vector (6).png">
+                </button>
+              </div>
+              <table id="data-table">
+                <thead>
+                  <tr>
+                    <th id="name">Member Name</th>
+                    <th id="id">Member ID</th>
+                    <th id="plan">Plan</th>
+                    <th id="month">Month</th>
+                    <th id="datepaid">Date Paid</th>
+                    <th id="amount">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
